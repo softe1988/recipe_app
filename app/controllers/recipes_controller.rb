@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
-
+  before_filter :authenticate_user!
   # GET /recipes
   # GET /recipes.json
   def index
