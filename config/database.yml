@@ -21,7 +21,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   database: postgres
-  username: simone
+  username: simoine
   password: 'ttsrecipe'
   host: 0.0.0.0
 
@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: postgres
-  username: simone
+  username: simoine
   password: <%= ENV['RECIPEBOX_DATABASE_PASSWORD'] %>
